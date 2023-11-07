@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Shop</title>
+    <link rel="stylesheet" href="styling/styles.css">
+    <script>
+        document.addEventListener('mousemove', e =>
+        {
+            let cursor = document.getElementById("cursor");
+            cursor.setAttribute("style", "top: "+(e.pageY - 1)+"px; left: "+(e.pageX - 1)+"px;")
+        })
+
+
+    </script>
+</head>
+<body>
+    <div class="custom-cursor" id="cursor"></div>
+    <header>
+        <h1><a class="header-link" href="homepage.html">Numileo</a></h1>
+        <nav>
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="Shop.html">Shop</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="FaQ.html">FaQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="about-text">
+        <h3>About us</h3>
+        <ul>
+            <div class="list-container">
+            <li><b>Welcome to Numileo</b>, your one-stop destination for the latest and trendiest fashion. We're passionate about helping you express your unique style and stay ahead of the fashion curve.</li>
+            <li><b>Our Story:</b>
+                Numileo was founded with a simple mission - to provide high-quality, affordable fashion that empowers individuals to look and feel their best. We believe that fashion is a form of self-expression, and we're here to help you make a statement.</li>
+            <li><b>What We Offer:</b>
+                At Numileo, we offer a curated selection of clothing, accessories, and more, all designed to keep you looking and feeling confident. From casual wear to formal attire, we've got you covered for every occasion. Our team works tirelessly to stay updated with the latest fashion trends, ensuring you'll always find the perfect outfit to suit your style.</li>
+            <li><b>Quality and Affordability:</b>
+                We understand the importance of quality and affordability. That's why we source our products from reputable manufacturers and offer them at competitive prices. Our commitment to quality extends to every piece in our collection, so you can shop with confidence.</li>
+            <li><b>Customer-Centric Approach:</b>
+                Customer satisfaction is at the heart of our business. We provide a seamless shopping experience, from easy navigation on our website to prompt delivery and excellent customer support. If you have any questions or feedback, our dedicated team is here to assist you.</li>
+
+        </ul>
+    </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Numileo</p>
+        <a class="impressum" href="impressum.html">Impressum</a>
+    </footer>
+    

@@ -1,0 +1,139 @@
+/* CSS for Impressum Page */
+
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,400;1,100;1,300&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    
+}
+
+header h1 {
+    font-size: 2rem;
+    font-family: 'Nosifer', sans-serif;
+    text-shadow:0px 1px rgb(250, 209, 28);
+    text-decoration: none;
+    color: #ffffff;
+}
+
+a.impressum-header {
+    font-size: 2rem;
+    font-family: 'Nosifer', sans-serif;
+    text-shadow:0px 1px rgb(250, 209, 28);
+    text-decoration: none;
+    color: #f4f4f4;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+section.impressum-text {
+    margin: 2rem;
+    text-align: center;
+    color: #333;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.impressum-text h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.impressum-text p {
+    margin: 10px 0;
+    color: #666;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.impressum {
+    text-decoration: none;
+    color: #ecbe68;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    section.impressum-text {
+        margin: 1rem;
+        padding: 1rem;
+    }
+}
+
+/* Hover Effect for Impressum Link */
+
+.impressum:hover {
+    text-decoration: underline;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+.custom-cursor {
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: rgb(255, 187, 0);
+    mix-blend-mode:lighten;
+    z-index: 1000;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    }

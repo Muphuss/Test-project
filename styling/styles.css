@@ -1,0 +1,562 @@
+/* Reset some default browser styles */
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,400;1,100;1,300&display=swap');
+
+* {
+    box-sizing: border-box;
+    cursor: none;
+}
+
+body, h1, h2, ul {
+    margin: 0;
+    padding: 0;
+}
+html {
+    cursor: none; 
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    position: relative;
+    
+    
+}
+
+
+body::before {
+    content: "";
+    background-image: url(https://images.pexels.com/photos/179909/pexels-photo-179909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: cover;
+    filter: blur(5px); 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+a:hover, button:hover, div:hover, img:hover {
+
+    cursor: none !important; 
+} 
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    transition: all(.4s ease-in-out);
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+section.featured-products {
+    margin: 2rem;
+    text-align: center;
+    color: #f4f4f4;
+}
+
+.featured-products h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.product {
+    border: 1px transparent #ccc;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 1rem;
+    display: inline-block;
+    max-width: 300px;
+    text-align: center;
+    background-color: transparent;
+    transition: transform 0.2s ease-in-out;
+}
+
+.product h3 {
+    text-align: center;
+    background-color: transparent;
+    font-family: 'Nosifer', sans-serif;
+}
+
+.product p {
+    text-align: center;
+    background-color: transparent;
+    font-size: 16px;
+    
+    border-bottom: solid wheat;
+    border-radius: 9%;
+    font-family: 'Urbanist', sans-serif;
+}
+
+.featured-products h2::first-letter {
+    font-size: 30px;
+    text-shadow: 2px 2px rgb(160, 27, 27) ;
+    
+    
+}
+
+.product h3:hover {
+    
+    font-family: 'Nosifer', sans-serif;
+    text-decoration: underline;
+    color: #66491283;
+    text-shadow: 1px 1px rgb(255, 255, 255);
+}
+
+.product img:hover {
+    
+    transform: scale(1.1); /* Enlarge the product on hover */
+    transition: 0.2s ease-out;
+}
+
+
+.product img {
+    max-width: 100%;
+    justify-content: center;
+}
+
+.product h3 {
+    margin: 0.5rem 0;
+}
+
+.product .price {
+    font-weight: bold;
+    text-shadow: 1px 1px black;
+    text-decoration:line-through red;
+    color: white;
+}
+
+.product .price-current {
+    font-weight: bold;
+    text-shadow: 1px 1px black;
+    color: white;
+    
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.product {
+    /* ... other styles ... */
+    position: relative;
+}
+
+/* Style for the previous and next buttons */
+.prev-button,
+.next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-30%);
+    font-size: 40px;
+    background: none;
+    border: none;
+    
+}
+
+
+.prev-button {
+    left: -50px;
+}
+
+.next-button {
+    right: -50px;
+}
+
+body h2 {
+    text-align: center;
+    background-color: transparent;
+    font-family: 'Nosifer', sans-serif;
+    color: #ecbe68be;
+    text-shadow: 1px 1px rgb(255, 255, 255);
+}
+
+.cart-btn{
+color: #ffffff;
+background-color: #7e6b36c7;
+box-shadow: #ff0505;
+
+
+}
+
+.cart-btn:hover{
+    color: #ffffff;
+    background-color: #7e6b364b;
+    box-shadow: #ff0505;
+    
+    }
+
+header a:hover {
+color: #ff0505bd;
+text-decoration: underline;
+transition: transform 0.2s ease-in-out;
+}
+
+header h1 {
+    font-family: 'Nosifer', sans-serif;
+    text-shadow:0px 1px rgb(250, 209, 28);
+
+
+}
+
+footer {
+text-decoration: underline;
+
+}
+
+.impressum {
+color: #f4f4f4;
+
+}
+
+.contact {
+text-decoration: underline;
+color: #fff;
+justify-content: center;
+
+}
+
+.cart-popup {
+    display: none;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+}
+
+
+/* About*/
+
+.about-text h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+    
+    font-family: 'Nosifer', sans-serif;
+    text-shadow:0px 1px rgb(250, 209, 28);
+
+}
+
+.about-text ul {
+    list-style-type: disc; /* Use bullets for list items */
+    margin-left: 20px;
+}
+
+.about-text li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.about-text {
+    text-align: left;
+    background-color: #f9f9f92f;
+    padding: 20px;
+}
+
+.about-text {
+    border: 3px solid #b8a95000;
+    box-shadow: 20px 10px 10px rgba(0, 0, 0, 0.74);
+    border-radius: 1%;
+}
+
+.about-text ul {
+    margin-left: 30px;
+}
+
+.about-text li {
+    margin-bottom: 15px;
+}
+
+.list-container {
+padding: 20px;
+
+
+}
+
+
+/* FaQ */
+
+
+.FaQ {
+    background-color: #f9f9f900;
+    padding: 20px;
+    border: 1px solid #dddddd11;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.faq-item {
+    background-color: #184baa1f;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.faq-item h4 {
+    font-size: 18px;
+    color: #000000;
+    text-decoration: underline;
+}
+
+.faq-item p {
+    font-size: 16px;
+    color: #fff9f9;
+    line-height: 1.5;
+}
+
+
+/* Reset some default browser styles */
+body, h1, h2, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/*Contact formular*/
+
+.contact-form {
+    text-align: center;
+    padding: 2rem;
+}
+
+.contact-form h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #f7f7f7;
+    text-shadow:1px 1px #ddd121;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label, input, textarea {
+    display: block;
+    margin-bottom: 10px;
+    color: #000000;
+    text-decoration: underline;
+    text-shadow:0px 1px #431bd427;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #f0ff208c;
+    border-radius: 5px;
+    background-color: rgba(14, 54, 100, 0.233)
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Center the shop products */
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product {
+    /* Your existing product styles */
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 20px;
+    border: 1px solid #cccccc3a;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.product h3 {
+    text-align: center;
+    font-family: 'Nosifer', sans-serif;
+    color: #ecbe68be;
+    text-shadow: 1px 1px rgb(255, 255, 255);
+}
+
+.product p {
+    text-align: center;
+    font-size: 16px;
+    color: #000;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.header-link {
+color: #ffffff;
+text-decoration: none;
+transition: all(.4s ease-in-out);
+}
+
+.impressum-text {
+justify-content: center;
+
+
+}
+
+/* Add this CSS to style your cart button */
+#cart-button {
+    background-color: #ff8a05de;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#cart-button:hover {
+    background-color: #ff2727;
+}
+
+
+/*cart styling*/
+.cart-popup {
+    display: none;
+    position: fixed;
+    top: 120px;
+    right: 10px;
+    background-color: #e0a523cc;
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+    max-height: 400px;
+    overflow: auto;
+}
+
+.cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333333;
+    color: #fff;
+    padding: 10px;
+}
+
+.cart-header h2 {
+    margin: 0;
+}
+
+.close-cart {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 20px; 
+}
+
+
+.faq-question {
+    position: relative;
+    
+}
+
+.dropdown-arrow::before {
+    content: "▼";
+    position: absolute;
+    right: 10px; /* Adjust this value to move the arrow to the right */
+    transition: transform 0.2s;
+}
+
+.faq-answer {
+    display: block;
+}
+
+.open .dropdown-arrow::before {
+    transform: rotate(180deg);
+}
+
+.FaQ h3 {
+text-align: center;
+text-decoration:underline;
+color: #f0a646;
+text-shadow: 1px 1px black;
+} 
+
+.custom-cursor {
+position: absolute;
+width: 13px;
+height: 13px;
+border-radius: 50%;
+background-color: rgb(255, 187, 0);
+mix-blend-mode:lighten;
+z-index: 1000;
+pointer-events: none;
+transform: translate(-50%, -50%);
+}
+

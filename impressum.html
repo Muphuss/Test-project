@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impressum</title>
+    <link rel="stylesheet" href="styling/impressum-styles.css">
+    <script>
+        document.addEventListener('mousemove', e =>
+        {
+            let cursor = document.getElementById("cursor");
+            cursor.setAttribute("style", "top: "+(e.pageY - 1)+"px; left: "+(e.pageX - 1)+"px;")
+        })
+
+
+    </script>
+</head>
+<body>
+    <div class="custom-cursor" id="cursor"></div>
+    <header>
+        <h1><a class="impressum-header" href="homepage.html">Impressum</a></h1>
+        <nav>
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="impressum-text">
+        <h2>Impressum</h2>
+        <p>This is a sample Impressum page providing legal information about the publisher of the website. It's important to include accurate and up-to-date contact information and legal details.</p>
+        <p>Company Name: Your Company Name</p>
+        <p>Address: 123 Main Street, City, Country</p>
+        <p>Phone: +123-456-7890</p>
+        <p>Email: info@yourcompany.com</p>
+        <p>Register Court: Local Court of City</p>
+        <p>Register Number: HRB 12345</p>
+        <p>VAT ID: DE123456789</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Your Company</p>
+        <a class="impressum" href="impressum.html">Impressum</a>
+    </footer>
+</body>
+</html>

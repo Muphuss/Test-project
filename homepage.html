@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Shop</title>
+    <link rel="stylesheet" href="styling/styles.css">
+    <script>
+        document.addEventListener('mousemove', e =>
+        {
+            let cursor = document.getElementById("cursor");
+            cursor.setAttribute("style", "top: "+(e.pageY - 1)+"px; left: "+(e.pageX - 1)+"px;")
+        })
+    </script>
+</head>
+<body>
+
+    <div class="custom-cursor" id="cursor"></div>
+    <header>
+        <h1><a class="header-link" href="homepage.html">Numileo</a></h1>
+        <nav>
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="Shop.html">Shop</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="FaQ.html">FaQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="featured-products">
+        <h2 onClick="test()">Featured Products</h2>
+        <div class="product" id="product1">
+            <!-- Arrow buttons for navigation -->
+            <button class="prev-button" onclick="prevProduct('product1')">&#8249;</button>
+            <img src="images/NicePng_hoodie-template-png_1551137.png" alt="Product 1">
+            <h3>Lorem Hoodie</h3>
+            <p> this hoodie is the perfect addition to your wardrobe.</p>
+            <span class="price">€49.99</span>
+            <span class="price-current">€29.99</span>
+            <button class="cart-btn">Add to Cart</button>
+            <button class="next-button" onclick="nextProduct('product1')">&#8250;</button>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <p>&copy; 2023 Numileo</p>
+        <a class="impressum" href="impressum.html">Impressum</a>
+    </footer>
+</body>
+</html>

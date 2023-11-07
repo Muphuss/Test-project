@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Shop - FAQ</title>
+    <link rel="stylesheet" href="styling/styles.css">
+    <script>
+        document.addEventListener('mousemove', e =>
+        {
+            let cursor = document.getElementById("cursor");
+            cursor.setAttribute("style", "top: "+(e.pageY - 1)+"px; left: "+(e.pageX - 1)+"px;")
+        })
+
+
+    </script>
+    <style>
+        .faq-answer {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="custom-cursor" id="cursor"></div>
+    <header>
+        <h1><a class="header-link" href="homepage.html">Numileo</a></h1>
+        <nav>
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="Shop.html">Shop</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="FaQ.html">FaQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="FaQ">
+        <h3>Frequently Asked Questions (FAQ)</h3>
+        <div class="faq-item">
+            <h4 class="faq-question">What is Numileo? <span class="dropdown-arrow"></span></h4>
+            <p class="faq-answer">Numileo is your premier destination for the latest and trendiest fashion. We offer a curated selection of clothing, accessories, and more, designed to keep you looking and feeling confident.</p>
+        </div>
+        <div class="faq-item">
+            <h4 class="faq-question">What payment methods do you accept? <span class="dropdown-arrow"></span></h4>
+            <p class="faq-answer">We accept a variety of payment methods, including credit cards (Visa, MasterCard, American Express), PayPal, and more. Rest assured, your payment information is secure and encrypted.</p>
+        </div>
+
+        <div class="faq-item">
+            <h4 class="faq-question">What is your return policy? <span class="dropdown-arrow"></span></h4>
+            <p class="faq-answer">Our return policy allows you to return items within 30 days of purchase. Just make sure the items are unused, in their original packaging, and with all tags attached. Visit our "Returns & Refunds" page for more details.</p>
+        </div>
+
+        <div class="faq-item">
+            <h4 class="faq-question">Do you offer international shipping? <span class="dropdown-arrow"></span></h4>
+            <p class="faq-answer">Yes, we offer international shipping to many countries. During the checkout process, you can select your country for shipping. Please note that shipping costs and delivery times may vary depending on your location.</p>
+        </div>
+
+        <div class="faq-item">
+            <h4 class="faq-question">Are your products eco-friendly? <span class="dropdown-arrow"></span></h4>
+            <p class="faq-answer">We are committed to sustainability. Many of our products are made from eco-friendly materials and follow ethical manufacturing processes. Check out our "Sustainability" page to learn more about our efforts to reduce our environmental impact.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Numileo</p>
+        <a class="impressum" href="impressum.html">Impressum</a>
+    </footer>
+
+    <script>
+        const questions = document.querySelectorAll('.faq-question');
+
+        questions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                question.classList.toggle('open');
+                if (question.classList.contains('open')) {
+                    answer.style.display = 'block';
+                } else {
+                    answer.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
